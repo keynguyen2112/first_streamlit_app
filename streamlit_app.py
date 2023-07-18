@@ -65,6 +65,3 @@ if treamlit.button('Add a Fruit to the List'):
     my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
     back_from_function = insert_row_snowflake(fruit_add)
     streamlit.text(back_from_function)
-
-#This will not work correctly, but just go with it for now
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
